@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 | Variable | Default | Description |
 |---|---|---|
-| `NTFY_TOPIC` | `Xj537s9zN14` | The ntfy.sh topic to subscribe to |
+| `NTFY_TOPIC` | `your-private-topic` | The ntfy.sh topic to subscribe to |
 | `DIR_KRISBOONE` | `/Users/kris/Coding/krisboone` | Local path for krisboone.com |
 | `DIR_STEPSTOOLSPORTS` | `/Users/kris/Coding/stepstoolsports` | Local path for stepstoolsports.com |
 

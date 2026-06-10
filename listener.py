@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOPIC = os.getenv("NTFY_TOPIC", "Xj537s9zN14")
+TOPIC = os.getenv("NTFY_TOPIC", "your-private-topic")
 
 PROJECTS = {
     "krisboone":       os.getenv("DIR_KRISBOONE",       "/Users/kris/Coding/krisboone"),
