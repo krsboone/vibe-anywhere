@@ -49,6 +49,7 @@ Leave it running in a terminal or tmux session. It reconnects automatically if t
 ## Sender
 
 Add `remote-sender/vibe-sender-example.php` to your site after updating `$allowed`, `'topic'`.
+
 NOTE: all user supplied values will need to be collected then sent to this script in a manner similar to:
 ```
 const res  = await fetch('remote-sender/vibe-sender-example.php', { method: 'POST', body: new FormData(form) });
