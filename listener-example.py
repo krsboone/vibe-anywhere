@@ -12,8 +12,8 @@ load_dotenv()
 TOPIC = os.getenv("NTFY_TOPIC", "your-private-topic")
 
 PROJECTS = {
-    "krisboone":       os.getenv("DIR_KRISBOONE",       "/Users/kris/Coding/krisboone"),
-    "stepstoolsports": os.getenv("DIR_STEPSTOOLSPORTS", "/Users/kris/Coding/stepstoolsports"),
+    "repo1": os.getenv("DIR_PROJECT1", "/path/to/project/repo1"),
+    "repo2": os.getenv("DIR_PROJECT2", "/path/to/project/repo2"),
 }
 
 
