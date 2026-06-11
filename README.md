@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 | Variable | Default | Description |
 |---|---|---|
-| `NTFY_TOPIC` | `your-private-topic` | The ntfy.sh topic to subscribe to |
+| `NTFY_TOPIC` | `your-private-topic` | The ntfy.sh topic to subscribe to. Ensure it's something that can never be guessed |
 | `DIR_PROJECT1` | `/path/to/project/repo1` | Local path for repo1 |
 | `DIR_PROJECT2` | `/path/to/project/repo1` | Local path for repo2 |
 
