@@ -36,7 +36,7 @@ def handle(message_text: str) -> None:
         print(f"[skip] unknown project: {project!r}")
         return
 
-    print(f"[{project}] {prompt[:100]}")
+    print(f"[{project}] {prompt[:1000]}")
     subprocess.run(["claude", "-p", prompt], cwd=cwd)
 
 
