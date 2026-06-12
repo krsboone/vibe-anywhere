@@ -64,6 +64,18 @@ Only grant this in repos you're comfortable having modified and pushed to
 unattended — start with the minimum allowlist needed and add to it
 deliberately.
 
+### Access outside the project directory
+
+Claude Code sandboxes file access to the project directory plus anything
+listed in `additionalDirectories`. If your global Claude Code instructions
+(`~/.claude/CLAUDE.md`) reference files outside the project — a memory
+system, shared notes, constraint files — those reads will silently fail
+under `claude -p` unless the containing directory is added to
+`additionalDirectories` in that project's `.claude/settings.local.json`
+(see the example file). This matters especially for any binding rules
+(e.g. constraints) that are expected to apply to every session — without
+this, they won't load under vibe-anywhere at all.
+
 ### Trusting the project directory
 
 Claude Code only honors a project's `.claude/settings.local.json` in

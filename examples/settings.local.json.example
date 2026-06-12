@@ -6,6 +6,9 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git push *)"
+    ],
+    "additionalDirectories": [
+      "/path/to/your/memory-or-shared-directory"
     ]
   }
 }
