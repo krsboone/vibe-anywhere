@@ -76,7 +76,7 @@ under `claude -p` unless the containing directory is added to
 (e.g. constraints) that are expected to apply to every session — without
 this, they won't load under vibe-anywhere at all.
 
-If you don't already have a memory system, [the More Protocol](https://github.com/krsboone/more-protocol)
+If you don't already have a memory system, the [More Protocol](https://github.com/krsboone/more-protocol)
 defines a portable, file-based format for persistent AI memory — including
 the `constraint` type referenced above.
 
