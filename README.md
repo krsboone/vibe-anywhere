@@ -45,6 +45,24 @@ Leave it running in a terminal or tmux session. It reconnects automatically if t
 1. Add a new entry to `PROJECTS` in `listener.py`
 2. Add the corresponding `DIR_*` variable to `.env.example` and your `.env`
 3. Add the project as a radio button option in `vibe.php` on yoursite.com
+4. Grant Claude Code permission to act in that project — see below
+
+## Permissions
+
+`claude -p` runs non-interactively, so it cannot prompt for the usual tool
+permissions (Write, Edit, Bash). Without an explicit grant, Claude will
+report that it needs permission and stop without making any changes.
+
+For each project you want vibe-anywhere to be able to modify, copy
+[`examples/settings.local.json.example`](examples/settings.local.json.example)
+to `.claude/settings.local.json` in that project's repo and add
+`.claude/settings.local.json` to that repo's `.gitignore`. This grants a
+scoped allowlist (file edits + git add/commit/push) rather than bypassing
+permissions entirely.
+
+Only grant this in repos you're comfortable having modified and pushed to
+unattended — start with the minimum allowlist needed and add to it
+deliberately.
 
 ## Sender
 
