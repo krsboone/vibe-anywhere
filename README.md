@@ -64,6 +64,24 @@ Only grant this in repos you're comfortable having modified and pushed to
 unattended — start with the minimum allowlist needed and add to it
 deliberately.
 
+### Trusting the project directory
+
+Claude Code only honors a project's `.claude/settings.local.json` in
+directories it has been told to trust. `claude -p` runs non-interactively
+and can't show the "Do you trust the files in this folder?" prompt, so if a
+project directory has never been opened in Claude Code before, `-p` falls
+back to a restricted mode and ignores the allowlist — even if it's present.
+
+For each project directory, do this once, interactively:
+
+```bash
+cd /path/to/project && claude
+```
+
+Accept the trust prompt, then exit (`/exit` or Ctrl+D). After that,
+`claude -p` invocations from `listener.py` will pick up
+`.claude/settings.local.json` for that directory.
+
 ## Sender
 
 Add `remote-sender/vibe-sender-example.php` to your site after updating `$allowed`, `'topic'`.
